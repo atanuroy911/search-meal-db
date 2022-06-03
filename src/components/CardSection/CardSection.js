@@ -12,7 +12,7 @@ const CardSection = (props) => {
     }, []);
     return (
         <div>
-            <div className="flex flex-col bg-emerald-600 mx-10 p-auto rounded-lg shadow mb-10">
+            <div className="flex flex-col bg-emerald-600 mx-10 p-auto rounded-lg shadow">
                 <h1 className="flex py-5 lg:px-20 md:px-10 px-5 lg:mx-10 md:mx-20 mx-5 font-bold text-4xl text-transparent bg-clip-text bg-gradient-to-b from-orange-400 to-yellow-400 text-shadow-sm">
                     <span>{props.foodType} Foods</span>
                 </h1>

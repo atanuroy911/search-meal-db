@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
+import SearchResult from './components/SearchResults/SearchResults';
 
 function App() {
   return (
@@ -20,8 +21,10 @@ function App() {
         </Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
+        <Route path='/search' element={<SearchResult/>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
+      
 
     </div>
   );
