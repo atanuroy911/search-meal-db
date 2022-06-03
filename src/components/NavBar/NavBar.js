@@ -1,5 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function NavBar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -8,11 +8,11 @@ export default function NavBar({ fixed }) {
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-emerald-500 mb-0 h-16">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
+            <Link
               className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
-              href="/">
+              to="/">
               <img src="https://www.themealdb.com/images/logo-small.png" alt="MealDB Logo" />
-            </a>
+            </Link>
             <button
               className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
@@ -29,36 +29,36 @@ export default function NavBar({ fixed }) {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
-                <a
+                <Link
                   className="px-3 py-2 flex items-center text-normal uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="/home"
+                  to="/home"
                 >
                   <i className="fa-solid fa-home text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Home</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="px-3 py-2 flex items-center text-normal uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="/categories"
+                  to="/categories"
                 >
                   <i className="fa-solid fa-tree text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Categories</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="px-3 py-2 flex items-center text-normal uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="/about"
+                  to="/about"
                 >
                   <i className="fa-solid fa-address-card text-lg leading-lg text-white opacity-75"></i><span className="ml-2">About</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="px-3 py-2 flex items-center text-normal uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="/contact"
+                  to="/contact"
                 >
                   <i className="fa-solid fa-paper-plane text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact Us</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -9,7 +9,6 @@ const Categories = () => {
         axios.get(url)
             .then(res => {
                 setCategories(res.data.categories);
-                console.log(res);
             })
     })
     return (

@@ -1,10 +1,10 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import EResult from '../EResult/EResult';
 import NoResult from '../NoResult/NoResult';
 
-const SearchResults = () => {
+const BrowseResults = () => {
     const [searchParams] = useSearchParams();
     const searchParam = searchParams.get('q');
     const [foodItems, setFoodItems] = useState([]);
@@ -31,4 +31,4 @@ const SearchResults = () => {
 
 };
 
-export default SearchResults;
+export default BrowseResults;
