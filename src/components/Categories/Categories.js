@@ -12,7 +12,7 @@ const Categories = () => {
             })
     })
     return (
-        <div className='grid grid-cols-4 gap-2 p-12'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-12'>
             {categories.map(category => <Category key={category.idCategory} category={category}></Category>)}
         </div>
     );

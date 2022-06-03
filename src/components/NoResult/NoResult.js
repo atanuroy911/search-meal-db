@@ -8,7 +8,7 @@ const NoResult = () => {
                 className="flex items-center justify-center w-full NotFound-height container-height bg-gradient-to-b from-emerald-500 to-green-400">
                 <div className="px-40 py-20 bg-white rounded-md shadow-xl">
                     <div className="flex flex-col items-center">
-                        <h1 className="font-bold text-emerald-600 text-9xl">Oops! </h1> <br></br>
+                        <h1 className="font-bold text-emerald-600 sm:text-3xl md:text-5xl lg:text-9xl">Oops! </h1> <br></br>
                         <h6 className="mb-2 text-2xl font-bold text-center text-gray-800 md:text-3xl">
                             <span className="text-red-500">Sorry!</span> No Result found
                         </h6>

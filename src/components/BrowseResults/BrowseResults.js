@@ -23,7 +23,7 @@ const BrowseResults = () => {
     }
     else {
         return (
-            <div className='grid grid-cols-4 gap-2 p-12'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 p-12'>
                 {foodItems.map(food => <EResult key={food.idMeal} food={food}></EResult>)}
             </div>
         );

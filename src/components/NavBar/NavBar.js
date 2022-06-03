@@ -23,7 +23,7 @@ export default function NavBar({ fixed }) {
           <div
             className={
               "lg:flex flex-grow items-center" +
-              (navbarOpen ? " flex" : " hidden")
+              (navbarOpen ? " flex bg-emerald-500" : " hidden")
             }
             id="example-navbar-danger"
           >
@@ -55,9 +55,9 @@ export default function NavBar({ fixed }) {
               <li className="nav-item">
                 <Link
                   className="px-3 py-2 flex items-center text-normal uppercase font-bold leading-snug text-white hover:opacity-75"
-                  to="/contact"
+                  to="/api"
                 >
-                  <i className="fa-solid fa-paper-plane text-lg leading-lg text-white opacity-75"></i><span className="ml-2">Contact Us</span>
+                  <i className="fa-solid fa-link text-lg leading-lg text-white opacity-75"></i><span className="ml-2">API</span>
                 </Link>
               </li>
             </ul>

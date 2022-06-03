@@ -19,7 +19,7 @@ const SearchFood = () => {
     return (
 
         <div className="flex justify-center">
-            <form onSubmit={() => Navigate()} class="flex items-center w-full mx-60">
+            <form onSubmit={() => Navigate()} class="flex items-center w-full mx-12 md:mx-40 lg:mx-60">
                 <label for="simple-search" class="sr-only">Search</label>
                 <div class="relative w-full">
                     <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
